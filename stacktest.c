@@ -1,4 +1,3 @@
-// Online C compiler to run C program online
 #include <stdio.h>
 
 /* Macro called SIZE = 4 */
@@ -73,9 +72,9 @@ void show()
         printf("Underflow!!\n");
     else
     {
-        for (int i = top; i >= 0; --i)
+        for (counter = top; counter >= 0; --counter)
         {
-            printf("---%d\n", int_stack[i]);
+            printf("---%d\n", int_stack[counter]);
         }
     }
 }
