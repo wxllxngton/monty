@@ -4,7 +4,7 @@
 /* Macro called SIZE = 4 */
 #define SIZE 4
 
-int top = -1, int_queue[SIZE];
+int top = -1, int_stack[SIZE];
 
 void push();
 void pop();
@@ -50,7 +50,7 @@ void push()
         scanf("%d", &x);
         
         top += 1;
-        int_queue[top] = x;
+        int_stack[top] = x;
     }
 }
 
@@ -60,7 +60,7 @@ void pop()
         printf("Underflow!!\n");
     else
     {
-        printf("Popped element = %d\n", int_queue[top]);
+        printf("Popped element = %d\n", int_stack[top]);
         top -= 1;
     }
 }
@@ -75,7 +75,7 @@ void show()
     {
         for (int i = top; i >= 0; --i)
         {
-            printf("---%d\n", int_queue[i]);
+            printf("---%d\n", int_stack[i]);
         }
     }
 }
